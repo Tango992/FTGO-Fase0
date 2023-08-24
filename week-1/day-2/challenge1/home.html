@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="nav-list">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="product.html">PRODUCT</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="inventory.html">INVENTORY</a></li>
+                </ul>
+            </div>
+            <div class="nav-img">
+                <img src="images/menu.png">
+            </div>
+        </div>
+    </header>
+
+    <div class="content flex-container">
+        <div class="content-items content-picture">
+            <img src="images/pfp.jpg">
+        </div>
+
+        <div class="content-items content-main">
+            <h1>Daniel Osvaldo Rahmanto</h1>
+            <p>Back End Developer</p>
+            <div class="btn-flex-container">
+                <a href="mailto:daniel.rahmanto@gmail.com" class="button" id="kontak">Kontak</a>
+                <a href="https://www.linkedin.com/in/daniel-osvaldo-rahmanto-297081218/" target="_blank" class="button" id="resume">Resume</a>
+            </div>
+        </div>
+        
+        <div class="content-items vl"></div>
+
+        <div class="content-items content-detail">
+            <table>
+                <tr>
+                    <th>Availability</th>
+                    <td>Fulltime</td>
+                </tr>
+                <tr>
+                    <th>Usia</th>
+                    <td>22 tahun</td>
+                </tr>
+                <tr>
+                    <th>Lokasi</th>
+                    <td>Bekasi</td>
+                </tr>
+                <tr>
+                    <th>Pengalaman</th>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>daniel.rahmanto@gmail.com</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="form flex-container">
+        <form action="#" method="post">
+            <div class="form">
+                <label for="name">Nama</label>
+                <input required name="name" type="text" placeholder="Masukkan nama anda">
+            </div>
+            <div class="form">
+                <label for="role">Role</label>
+                <input required name="role" type="text">
+            </div>
+            <div class="form">
+                <label for="availability">Availability</label>
+                <input required name="availability" type="text">
+            </div>
+            <div class="form">
+                <label for="usia">Usia</label>
+                <input required name="usia" type="number">
+            </div>
+            <div class="form">
+                <label for="lokasi">Lokasi</label>
+                <input required name="lokasi" type="text">
+            </div>
+            <div class="form">
+                <label for="experience">Years of Experience</label>
+                <input required name="experience" type="number">
+            </div>
+            <div class="form">
+                <label for="email">Email</label>
+                <input required name="email" type="email">
+            </div>
+            <button type="submit" id="submit">SUBMIT</button>
+        </form>
+    </div>
+    
+    <footer>
+    </footer>
+</body>
+</html>
