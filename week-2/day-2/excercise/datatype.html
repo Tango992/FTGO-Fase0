@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Type JavaScript</title>
+</head>
+<body>
+    <!-- 1. Number
+    2. String
+    3. Boolean
+    4. Array
+    5. Object -->
+
+    <div id="hasil"></div>
+    <script>
+        // Tipe data number
+        let angka = 80;
+
+        // Tipe data string
+        let kalimat = "Selamat datang di FTGO RMT 002";
+
+        // Array
+        var coding = ["JavaScript", "GoLang", "Java"]
+
+        // Object
+        var student = {
+            nama : "wijaya",
+            kelas : "rmt002",
+            program : "FTGO",
+            batch : 2,
+        };
+        
+        // document.getElementById("hasil").innerHTML = typeof(angka);
+        // document.getElementById("hasil").innerHTML = kalimat;
+        // document.getElementById("hasil").innerHTML = coding[1];
+        document.getElementById("hasil").innerHTML = student.nama + " mengikuti kelas " + student.kelas + " pada program " + student.program + " dengan no batch " + student.batch;    
+
+    </script>
+</body>
+</html>
