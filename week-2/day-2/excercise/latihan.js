@@ -1,0 +1,1 @@
+alert("Hello, ini adalah FTGO RMT 002 External");
