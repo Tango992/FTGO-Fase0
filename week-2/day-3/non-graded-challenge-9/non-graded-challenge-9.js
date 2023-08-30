@@ -94,4 +94,4 @@ function targetTerdekat(arr) {
     }
     return Math.min(...distance);
 }
-console.log(targetTerdekat([' ', ' ', ' ', ' ', 'o', ' ', ' ']));
+console.log(targetTerdekat(['x', ' ', 'o', ' ', ' ', 'x']));
