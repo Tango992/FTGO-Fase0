@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Excercise</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        .flex {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <h2>Informasi Mobil</h2>
+        <p id="infoMobil"></p>
+
+        <h2>Informasi Buku</h2>
+        <p id="judulBuku"></p>
+        <p id="penulisBuku"></p>
+        <p id="tahunTerbit"></p>
+    </div> 
+
+    <ul id="detailKaryawan"></ul>
+
+    <ul id="daftar-karyawan"></ul>
+
+    <form id="form-karyawan">
+        <input type="text" id="input-nama" placeholder="Nama" required>
+        <input type="text" id="input-posisi" placeholder="Posisi" required>
+        <input type="number" id="input-gaji" placeholder="Gaji" required>
+        <button type="submit">Tambah Karyawan</button>
+        <button onclick="hapusTerpilih()">Hapus Karyawan Terpilih</button>
+    </form>
+    
+    <br>
+    <input type="text" id="input-cari" onkeyup="cariDanTampilkan()" placeholder="Cari Karyawan">
+
+    <ul id="daftar-karyawan-2"></ul>
+
+
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+    <script src="script3.js"></script>
+</body>
+</html>

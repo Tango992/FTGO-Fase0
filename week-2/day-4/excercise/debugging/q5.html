@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debugging JS - Part 2</title>
+</head>
+<body>
+    <h2>Check if a number is positive, negative, or zero:</h2>
+    <div id="numResult"></div>
+
+    <script>
+        var num = 5;
+        var message = "";
+
+        if (num == 0) {
+            message = 'The number is zero.';
+        } else if (num > 0) {
+            message = 'The number is positive.';
+        } else {
+            message = 'The number is negative.';
+        }
+
+        document.getElementById('numResult').innerHTML = message;
+    </script>
+</body>
+</html>
