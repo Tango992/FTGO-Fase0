@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wahana Disney Island</title>
+</head>
+<body>
+
+<script>
+    // Inisialisasi variabel
+let usia = prompt("Masukkan usia Anda: ");
+let wahana = prompt("Pilih Wahana (Utara/Selatan): ");
+let saldo = prompt("Masukkan saldo anda: ");
+let tarif = 0;
+
+// Kategori usia
+if (usia <= 1) {
+    console.log("Dilarang Masuk");
+} else if (usia >= 2 && usia <= 12) {
+    if (wahana === "Utara") {
+        tarif = 85000;
+    } else if (wahana === "Selatan") {
+        tarif = 143000;
+    } else {
+        console.log("Tiket tidak ditemukan!");
+    }
+} else if (usia >= 13 && usia <= 49) {
+    if (wahana === "Utara") {
+        tarif = 125000;
+    } else if (wahana === "Selatan") {
+        tarif = 165000;
+    } else {
+        console.log("Tiket tidak ditemukan!");
+    }
+} else if (usia >= 50) {
+    if (wahana === "Utara") {
+        tarif = 125000;
+    } else if (wahana === "Selatan") {
+        tarif = 165000;
+    } else {
+        console.log("Tiket tidak ditemukan!");
+    }
+} else {
+    console.log("Tiket tidak ditemukan!");
+}
+
+// Cek saldo
+if (tarif > 0) {
+    if (saldo >= tarif) {
+        let sisa_saldo = saldo - tarif;
+        console.log("Sisa saldo anda adalah RP " + sisa_saldo + ",00. Selamat bermain.");
+    } else {
+        let selisih_saldo_dan_tarif = tarif - saldo;
+        console.log("Saldo anda kurang RP " + selisih_saldo_dan_tarif + ",00. Tidak cukup untuk membeli tiket.");
+    }
+}
+
+</script>
+
+</body>
+</html>

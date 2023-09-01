@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celcius to Fahrenheit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="col-md-4 mx-auto py-4">
+    <h1 class="text-center mb-4">Celcius to Fahrenheit</h1>
+    <form id="form">
+        <label class="form-label">Suhu dalam Celcius</label>
+        <input required class="form-control mb-3" type="number" step="0.01" id="celcius">
+        <button type="submit" class="btn btn-primary mb-4">Konversi</button>
+    </form>
+
+    <h3>Hasil dalam Fahrenheit: <span id="result" class="text-info"></span></h3>
+    </div>
+    <script>
+        document.getElementById("form").addEventListener('submit', e => {
+            e.preventDefault();
+            
+            let celcius = parseFloat(document.getElementById("celcius").value);
+            let fahrenheit = (celcius * 9/5) + 32;
+            document.getElementById("result").innerText = `${fahrenheit.toFixed(2)} °F`;
+        });
+    </script>
+</body>
+</html>
