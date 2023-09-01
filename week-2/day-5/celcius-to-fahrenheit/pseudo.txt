@@ -1,0 +1,9 @@
+INIT "celcius" 
+
+STORE "celcius" with float
+STORE "fahrenheit" with float
+
+CALCULATE "celcius" times 9 subtract 5 plus 32
+SET "fahrenheit" value with calculation result
+
+DISPLAY "fahrenheit"

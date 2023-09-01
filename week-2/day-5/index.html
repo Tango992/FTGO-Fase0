@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudocode</title>
+</head>
+<body>
+    <h2>Algoritma Luas Keliling Lingkaran</h2>
+    <p>Menghitung Luas dan keliling untuk Ukuran Jari-Jari Lingkaran</p>
+
+    <form>
+        <label>Masukkan Jari-Jari Lingkaran:</label>
+        <input type="number" name="jarijari" id="jarijari">
+        <button type="button" value="hitung" onclick="hitungLuasKeliling()">Calculate</button>
+    </form>
+
+    <h3>Hasil:</h3>
+    <p>Luas: <span id="hasilLuas"></span></p>
+    <p>Keliling: <span id="hasilKeliling"></span></p>
+
+    <script>
+        const phi = Math.PI;
+
+        function hitungLuasKeliling() {
+            let R = parseFloat(document.getElementById("jarijari").value);
+            let Luas = phi * R * R;
+            let Keliling = 2 * phi * R;
+            document.getElementById("hasilLuas").textContent = Luas.toFixed(2);
+            document.getElementById("hasilKeliling").textContent = Keliling.toFixed(2);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+Luas_Keliling_Lingkaran
+
+STORE "phi" to 3.14 
+INIT "R" as inputted number
+STORE "Luas" without value
+STORE "Keliling" without value
+
+CALCULATE "phi" multiply "R" multiply "R"
+STORE "Luas" with the result of calculation
+
+CALCULATE "phi" multiply "R" multiply 2
+STORE "Keliling" with the result of calculation
+
+DISPLAY "Luas" and "Keliling"
