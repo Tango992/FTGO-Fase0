@@ -17,7 +17,15 @@ function calculateAverage(lists) {
         avgs.push(avg)
     }
     return avgs
-
 }
 
-console.log(calculateAverage(facultyGrades1))
+calculateAverage(facultyGrades1)
+
+
+let facultyGrades2 = [
+    [82, 88, 89, 80, 85],
+    [71, 73, 75, 72, 70],
+    [65, 70, 68, 67, 69],
+]
+
+// console.log(calculateAverage(facultyGrades1))

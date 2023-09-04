@@ -13,23 +13,23 @@ const mobil = {
 document.getElementById("infoMobil").innerText = mobil.getMobilInfo()
 
 // Cara 2: Constructor Function
-// function manusia(nama, umur) {
-//     this.nama = nama;
-//     this.umur = umur;
-// }
+function manusia(nama, umur) {
+    this.nama = nama;
+    this.umur = umur;
+}
 
-// let Budi = new manusia("Budi", 25)
-// let Daniel = new manusia("Daniel", 22)
-// console.log(Daniel)
+let Budi = new manusia("Budi", 25)
+let Daniel = new manusia("Daniel", 22)
+console.log(Daniel)
 
 // Cara akses objek 
 // // 1. Notation
 
-// console.log(mobil.merk);
-// mobil.start();
+console.log(mobil.merk);
+mobil.start();
 
-// // 2. Bracket Notation
-// console.log(mobil["tahun"])
+// 2. Bracket Notation
+console.log(mobil["tahun"])
 
 const Buku = {
     judul: "Intro to Programming",

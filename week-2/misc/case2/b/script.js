@@ -1,12 +1,12 @@
 const libraryData = {
     publisher: "Bloomsbury",
     books: [
-        "Harry Potter and the Philosopher's Stone",
         "Harry Potter and the Chamber of Secrets",
         "Harry Potter and the Prisoner of Azkaban",
         "The Casual Vacancy",
         "A Cuckoo's Calling",
         "The Silkworm",
+        "Harry Potter and the Philosopher's Stone",
     ]
 }
 
@@ -33,4 +33,4 @@ function bookFinder(libraryData, keyword) {
     return "Keyword not suitable"
 }
 
-console.log(bookFinder(libraryData, "Harry Stone"))
+console.log(bookFinder(libraryData, "Harry Philosopher's Stone"))

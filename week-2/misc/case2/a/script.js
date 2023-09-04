@@ -18,7 +18,9 @@ function checkKeyword(key) {
     return true
 }
 
-console.log(checkKeyword("Harry Potter"))
-console.log(checkKeyword("Twilight"))
-console.log(checkKeyword("Har#ry"))
-console.log(checkKeyword("Harry Pot"))
+let test = checkKeyword("Harry Potter")
+checkKeyword("Twilight")
+checkKeyword("Har#ry")
+checkKeyword("Harry Pot")
+
+console.log(test)

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal7</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function pasanganTerbesar(num) {
+            let arr = num.toString().split("")
+            let buffer = 0
+
+            for (let i = 0; i < arr.length - 1; i++) {
+                let iteration = parseInt(arr[i] + arr[i + 1])
+                if(iteration > buffer) {
+                    buffer = iteration
+                }
+            }
+            return buffer
+        }
+
+        console.log(pasanganTerbesar(641573)); // 73
+        console.log(pasanganTerbesar(12783456)); // 83
+        console.log(pasanganTerbesar(910233)); // 91
+        console.log(pasanganTerbesar(71856421)); // 85
+        console.log(pasanganTerbesar(79918293)); // 99
+
+    </script>
+</body>
+</html>

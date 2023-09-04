@@ -4,6 +4,11 @@ const armorsAvailable = [
     "Chainmail",
 ]
 
+const testArmor = [
+    "Dragon Scale",
+    "Elven Leather",
+]
+
 const armorsInArmory = [
     "Dragon Scale",
     "Elven Leather",
@@ -21,7 +26,7 @@ function getArmorAvailability(armors) {
             obj[armor] = false
         }
     }
-    
+
     return obj
 }
 
