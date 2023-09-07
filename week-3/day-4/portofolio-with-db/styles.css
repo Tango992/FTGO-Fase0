@@ -1,0 +1,332 @@
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #f7f8fb;
+    font-family: Helvetica;
+}
+
+button {
+    height: 40px;
+    border-radius: 7px;
+    color: white;
+    background-color: green;
+    box-shadow: 2px 2px 2px rgb(173, 173, 173);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(1, 153, 1);
+}
+
+footer {
+    height: 100px;
+}
+
+form {
+    width: 100%;
+    margin: 10px;
+}
+
+header {
+    height: 40px;
+}
+
+img {
+    height: 200px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+input {
+    font-size: 14px;
+    padding: 6px 0;
+    padding-left: 6px;
+    width: 99%;
+    margin: 3px 0;
+}
+
+li {
+    display: inline;
+    padding-top: 10px;
+    padding-right: 40px;
+}
+
+li a {
+    color: grey;
+    transition: 0.2s ease-out;
+}
+
+li a:hover {
+    color: black;
+}
+
+table {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+th {
+    width: 120px;
+}
+
+th, td {
+    padding: 4px 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.btn-flex-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 7px;
+    line-height: 50px;
+    height: 50px;
+    padding: 0 30px;
+    box-shadow: 2px 2px 2px rgb(173, 173, 173);
+}
+
+.button:active {
+    box-shadow: none;
+    position: relative;
+    left: 2px;
+    top: 2px;
+}
+
+.content-detail td {
+    color: grey;
+}
+
+.content-main h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content-main p {
+    color: grey;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    margin: 50px 60px 0 60px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px lightgrey;
+}
+
+.form {
+    margin-bottom: 15px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 55px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 5px 5px lightgrey;
+}
+
+.nav-img img {
+    height: 35px;
+}
+
+.nav-img {
+    display: none;
+}
+
+
+.vl {
+    display: unset;
+    height: 130px;
+    border-left: 1px solid lightgray;
+    padding: 0;
+    margin: 0 30px;
+}
+
+#edit {
+    border: 1px solid blue;
+    background-color: blue;
+    color: white;
+    margin-right: 15px;
+    transition: 0.15s;
+}
+
+#edit:hover {
+    background-color: white;
+    color: blue;
+}
+
+#resume {
+    border: 1px solid green;
+    color: green;
+    transition: 0.15s;
+}
+
+#resume:hover {
+    background-color: green;
+    color: white;
+}
+
+#submit {
+    font-size: 13px;
+    width: 100%;
+}
+
+
+
+@media(max-width:768px) {
+    li {
+        padding-right: 10px;
+        font-size: smaller;
+    }
+    
+    img {
+        margin: 0;
+    }
+
+    table {
+        font-size: 10pt;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .btn-flex-container {
+        justify-content: center;
+    }
+
+    .flex-container {
+        margin: 40px 30px 0 30px;
+        justify-content: center;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+
+    .vl {
+        display: none;
+    }
+
+    .content-main h1 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .content-main p {
+        text-align: center;
+        color: grey;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .nav-bar {
+        justify-content: center;
+    }
+
+
+}
+
+@media(min-width: 1536px) {
+    .flex-container {
+        margin: 50px 160px 0 160px;
+    }
+
+    .vl {
+        display: unset;
+    }
+}
+
+@media(max-width: 1215px) {
+    .flex-container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    table {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .vl {
+        display: none;
+    }
+}
+
+
+@media(min-width: 321px) and (max-width:400px) {
+    img {
+        height: 170px;
+    }
+
+    h1 {
+        font-size: x-large;
+    }
+
+    li {
+        padding: 0 2px;
+        font-size: 9pt;
+    }
+
+    form {
+        margin: 0;
+    }
+
+    .button {
+        height: 36px;
+        line-height: 36px;
+        padding: 0 20px;
+    }
+
+    .flex-container {
+        margin: 40px 10px 0 10px;
+    }
+
+    .nav-bar {
+        justify-content: flex-end;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-img {
+        display: unset;
+    }
+}
+
+@media(max-width:400px) {
+    .nav-bar {
+        justify-content: flex-end;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-img {
+        display: unset;
+    }
+}
