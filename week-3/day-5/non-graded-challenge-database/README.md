@@ -6,7 +6,7 @@
 - Membuat tabel bernama Member yang berisi member_id (Primary), first_name, last_name, birth, dan address.
 - Membuat tabel bernama Lending_Transaction yang berisi transaction_id (Primary), member_id (Foreign), isbn (Foreign), lending_date, return_date, condition_at_return. Tabel ini memiliki relasi dengan Tabel Book untuk menghubungkan isbn yang merupakan foreign key, dan Tabel Member untuk menghubungkan member_id yang merupakan foreign key.
 
-![ERD Alternatif](asset/improved-erd.png)
+![ERD Alternatif](asset/erd.png)
 
 ## Analysis Alternatif
 
@@ -14,7 +14,7 @@
 - Membuat tabel bernama Author yang berisi ID (Primary), Name, dan Birth.
 - Karena setiap buku dapat memiliki beberapa Co-Author, maka dibuat tabel Co_Author yang berisi ID (Primary), ISBN (Foreign), dan Author_ID (Foreign).
 - Karena sebuah publisher dapat menerbitkan banyak baru, maka dibuat tabel bernama Publisher yang berisi ID (Primary), Name, Address, dan Telephone. Sehingga jika ada buku yang perlu direstorasi, pihak perusahaan dapat menghubungi publisher.
-- Membuat tabel bernama Member yang berisi ID (Primary), First_Name, Last_Name, Birth, Address, dan Current_Lending.
+- Membuat tabel bernama Member yang berisi ID (Primary), First_Name, Last_Name, Birth, Address, dan Current_Lending. Current_Lending memiliki check constraint sehingga jumlah maksimal buku yang dipinjam adalah 5.
 - Membuat tabel bernama Borrow yang berisi ID (Primary), Member_ID (Foreign), ISBN (Foreign), Lending_Date, dan Return_Date, Condition_at_Return.
 
 ![ERD Alternatif](asset/improved-erd.png)
@@ -92,7 +92,7 @@ DELIMITER ;
 ```sql
 INSERT INTO member (first_name, last_name, birth, address)
 VALUES 
-	('John', 'Doe', '2001-09-11', 'Jalan Cemara'),
+    ('John', 'Doe', '2001-09-11', 'Jalan Cemara'),
     ('Daniel', 'Rahmanto', '2001-05-14', 'Jalan Asri'),
     ('Foo', 'Bar', '1999-09-09', 'Jalan Perjuangan');
 ```
@@ -102,8 +102,8 @@ VALUES
 ```sql
 INSERT INTO book (title, author, publisher, year)
 VALUES 
-	('Pengantar Biologi', 'Budi', 'Erlangga', '2000-01-01'),
-	('Fisika', 'Andi', 'Pearson', '2014-05-14'),
+    ('Pengantar Biologi', 'Budi', 'Erlangga', '2000-01-01'),
+    ('Fisika', 'Andi', 'Pearson', '2014-05-14'),
     ('Kalkulus', 'Arjo', 'Kompas', '2010-09-11');
 ```
 
@@ -112,7 +112,7 @@ VALUES
 ```sql
 INSERT INTO lending_transaction (isbn, member_id, lending_date, return_date, condition_at_return)
 VALUES
-	(1, 1, '2023-09-07', NULL, NULL),
+    (1, 1, '2023-09-07', NULL, NULL),
     (1, 2, '2023-08-10', '2023-08-14', 'Good'),
     (2, 1, '2023-06-10', '2023-07-10', 'Bad'),
     (3, 3, '2023-08-21', '2023-08-28', 'Good'),
