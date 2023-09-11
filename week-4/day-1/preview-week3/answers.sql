@@ -21,3 +21,14 @@ SELECT film.title, film_actor.actor_id, film.film_id FROM film
 INNER JOIN film_actor
 ON film.film_id = film_actor.film_id
 WHERE film_actor.actor_id = 15;
+
+-- Hitung rata-rata jumlah inventaris per toko
+SELECT store_id, COUNT(inventory_id) AS inventory_per_store
+FROM inventory
+GROUP BY store_id;
+
+-- Tampilkan toko dengan inventaris terbanyak
+SELECT store_id, COUNT(inventory_id) 
+FROM inventory
+GROUP BY store_id DESC
+LIMIT 1;
